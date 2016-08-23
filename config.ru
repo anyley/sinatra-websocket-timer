@@ -8,7 +8,7 @@ module Timer
 
   class WebServer < Sinatra::Base
     enable :inline_templates
-    get '/login' do
+    get '/' do
       slim :index
     end
   end
