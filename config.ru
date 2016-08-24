@@ -66,12 +66,11 @@ div#root
 javascript:
   let ws = new WebSocket('ws://localhost:5000/');
   let timerListener = (response) => {
-    document.getElementById('root').innerHTML = '<h1>'+JSON.parse(response.data).time+'</h1>';
+    document.getElementById('root').innerHTML = `<h1> ${JSON.parse(response.data).time} </h1>`;
   };
 
   timer = setInterval(function() {
     if (document.readyState == 'complete') {
-      console.log('loaded!');
       ws.onmessage = timerListener;
       clearInterval(timer);
     }
