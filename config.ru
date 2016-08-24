@@ -74,4 +74,4 @@ javascript:
       ws.onmessage = timerListener;
       clearInterval(timer);
     }
-  }, 100);
+  }, 10);
