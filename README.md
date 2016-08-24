@@ -3,6 +3,7 @@
 
 ### Установка
     git clone https://github.com/anyley/sinatra-websocket-timer.git
+    cd sinatra-websocket-timer
     bundle install
 
 ### Запуск приложения
